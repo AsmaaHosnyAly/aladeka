@@ -328,12 +328,13 @@ ul {
 }
 .landing .image img {
   position: relative;
-  width: 600px;
+  width: 200px;
   animation: up-and-down 5s linear infinite;
 }
 @media (max-width: 991px) {
   .landing .image {
-    display: none;
+  position: relative;
+  top: 50;
   }
 }
 .landing .go-down {
