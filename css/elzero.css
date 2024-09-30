@@ -49,6 +49,8 @@ ul {
   .container {
     width: 1170px;
   }
+
+  
 }
 .main-title {
   text-transform: uppercase;
@@ -290,7 +292,9 @@ ul {
   display: flex;
   align-items: center;
   padding-bottom: 120px;
+ 
 }
+
 .landing .text {
   flex: 1;
 }
@@ -307,7 +311,17 @@ ul {
 @media (max-width: 767px) {
   .landing .text h1 {
     font-size: 28px;
+    color: var(--main-color);
   }
+  .landing .container {
+    background:linear-gradient(0deg, rgba(15, 19, 20, 0.3), rgba(3, 16, 29, 0.532)), url('/imgs/img1.png');
+      background-size:cover;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
 }
 .landing .text p {
   font-size: 23px;
@@ -320,21 +334,22 @@ ul {
   .landing .text p {
     margin: 10px auto;
   }
+
 }
 @media (max-width: 767px) {
   .landing .text p {
     font-size: 18px;
+    color: #f4eaea;
   }
 }
 .landing .image img {
   position: relative;
-  width: 200px;
+  width: 600px;
   animation: up-and-down 5s linear infinite;
 }
 @media (max-width: 991px) {
   .landing .image {
-  position: relative;
-  top: 50;
+    display: none;
   }
 }
 .landing .go-down {
@@ -1085,6 +1100,7 @@ ul {
   .pricing .box.popular {
     top: -20px;
   }
+ 
 }
 .pricing .box.popular .label {
   position: absolute;
