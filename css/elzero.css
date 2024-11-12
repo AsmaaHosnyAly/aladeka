@@ -1526,6 +1526,300 @@ ul {
   margin: 50px 0 0;
   border-top: 1px solid #444;
 }
+
+#popupDialog {
+  display: none;
+  position: fixed;
+  top: 35%;
+  left: 10%;
+  transform: translate(0%, -2%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.drfHxL {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: transparent;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.drfHxL::after {
+  transform: rotate(-45deg);
+}
+
+.drfHxL::before, .drfHxL::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  border-radius: 2px;
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.phone-call {
+  width: 50px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  background: #10b418;
+  position: fixed;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99;
+display: inline-block;
+line-height: 65px;
+}
+
+.phone-call:before {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+  background-color: #10b418;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  opacity: 0.6;
+  -webkit-animation: pulse 1s ease-out;
+  animation: pulse 1.8s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.eapp-whatsapp-chat-root-layout-component, .eapp-whatsapp-chat-root-layout-component * {
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+.hZAwTR {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: opacity 0.3s, margin 0.3s, visibility 0.3s;
+  background-color: rgb(255, 255, 255);
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  touch-action: auto;
+  margin-bottom: 76px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: auto;
+  margin-right: 20px;
+}
+
+.ewIAEB {
+  padding: 20px 20px 20px 10px;
+  background-color: rgb(230, 221, 212);
+  position: relative;
+  overflow: auto;
+  max-height: 382px;
+}
+
+.cweLnc {
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg);
+}
+
+.izlSME {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.izlSME::after {
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  inset: 0px;
+  position: absolute;
+  content: "";
+  overflow: hidden;
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.kdxbgZ {
+  background: rgb(9, 94, 84);
+  color: rgb(17, 17, 17);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 24px 20px;
+}
+
+
+.dSUAOZ::before {
+  position: absolute;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAMAAADp2asXAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACQUExURUxpccPDw9ra2m9vbwAAAAAAADExMf///wAAABoaGk9PT7q6uqurqwsLCycnJz4+PtDQ0JycnIyMjPf3915eXvz8/E9PT/39/RMTE4CAgAAAAJqamv////////r6+u/v7yUlJeXl5f///5ycnOXl5XNzc/Hx8f///xUVFf///+zs7P///+bm5gAAAM7Ozv///2fVensAAAAvdFJOUwCow1cBCCnqAhNAnY0WIDW2f2/hSeo99g1lBYT87vDXG8/6d8oL4sgM5szrkgl660OiZwAAAHRJREFUKM/ty7cSggAABNFVUQFzwizmjPz/39k4YuFWtm55bw7eHR6ny63+alnswT3/rIDzUSC7CrAziPYCJCsB+gbVkgDtVIDh+DsE9OTBpCtAbSBAZSEQNgWIygJ0RgJMDWYNAdYbAeKtAHODlkHIv997AkLqIVOXVU84AAAAAElFTkSuQmCC);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  top: 0px;
+  left: -12px;
+  width: 12px;
+  height: 19px;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html[dir="rtl"] .dSUAOZ {
+  margin-right: -62px;
+  margin-left: 0px;
+}
+
+.dSUAOZ {
+  padding: 7px 14px 6px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 8px 8px;
+  position: relative;
+  transition: 0.3s;
+  opacity: 0;
+  transform-origin: center top;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+  margin-top: 4px;
+  margin-left: -54px;
+  max-width: calc(100% - 66px);
+}
+
+.eapp-whatsapp-chat-root-layout-component a {
+  text-decoration: none;
+}
+
+.jwwAjt {
+  padding: 20px 12px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(79, 206, 93);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.jwwAjt {
+  padding: 20px 100px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(79, 206, 93);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+ 
+}
+
+.hqsrSh {
+  margin-left: 8px;
+  margin-right: 8px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+@-webkit-keyframes pulse {
+  0% {
+      -webkit-transform: scale(0);
+      opacity: 0;
+  }
+  25% {
+      -webkit-transform: scale(0.3);
+      opacity: 1;
+  }
+  50% {
+      -webkit-transform: scale(0.6);
+      opacity: .6;
+  }
+  75% {
+      -webkit-transform: scale(0.9);
+      opacity: .3;
+  }
+  100% {
+      -webkit-transform: scale(1);
+      opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(0);
+      opacity: 0;
+  }
+  25% {
+      transform: scale(0.3);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(0.6);
+      opacity: .6;
+  }
+  75% {
+      transform: scale(0.9);
+      opacity: .3;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
 /* End Footer */
 /* Start Animation */
 @keyframes up-and-down {

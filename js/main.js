@@ -25,8 +25,10 @@ let counter = setInterval(() => {
 
   document.querySelector(".days").innerHTML = days < 10 ? `0${days}` : days;
   document.querySelector(".hours").innerHTML = hours < 10 ? `0${hours}` : hours;
-  document.querySelector(".minutes").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
-  document.querySelector(".seconds").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+  document.querySelector(".minutes").innerHTML =
+    minutes < 10 ? `0${minutes}` : minutes;
+  document.querySelector(".seconds").innerHTML =
+    seconds < 10 ? `0${seconds}` : seconds;
 
   if (dateDiff < 0) {
     clearInterval(counter);
@@ -74,4 +76,11 @@ function startCount(el) {
       clearInterval(count);
     }
   }, 2000 / goal);
+}
+
+function popupFn() {
+  document.getElementById("popupDialog").style.display = "block";
+}
+function closeFn() {
+  document.getElementById("popupDialog").style.display = "none";
 }
